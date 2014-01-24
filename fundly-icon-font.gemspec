@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Fundly::Icon::Font::VERSION
   spec.authors       = ["jimmynicol"]
   spec.email         = ["james@fundly.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = "Icon font set for Fundly.com"
+  spec.summary       = "General purpose svg font set including categories and location icons"
+  spec.homepage      = "https://github.com/fundly/fundly-icon-font"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
