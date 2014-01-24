@@ -1,0 +1,7 @@
+// This file is generate by the gulp task: generateIconFiles
+// --------
+
+<% icons.forEach(function(icon, i){%>
+.f-icon-<%= icon%>:before
+  content: "<%= contents[i] %>"
+<% }) %>

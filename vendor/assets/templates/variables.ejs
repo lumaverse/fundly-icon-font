@@ -1,0 +1,16 @@
+// This file is generate by the gulp task: generateIconFiles
+// --------
+
+$f-icon-version: '0.0.1'
+$f-icon-path:    '' !default
+
+
+// -------------
+// Icon variables
+// -------------
+<% icons.forEach(function(icon, i){%>
+$f-icon-var-<%= icon%>: "<%= contents[i] %>"
+<% }) %>
+// -------------
+// End Icon variables
+// -------------
