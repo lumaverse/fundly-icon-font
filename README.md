@@ -1,24 +1,52 @@
-# Fundly::Icon::Font
+# fundly-icon-font
 
-TODO: Write a gem description
+A set of icons for use on Fundly.com. Primarily icons for our campaign categories but also for other things not covered in [FontAwesome](http://fontawesome.io/cheatsheet/).
 
-## Installation
+This font can be viewed at: [fundly.github.io/fundly-icon-font/](http://fundly.github.io/fundly-icon-font/)
+
+## Installation as a Gem
 
 Add this line to your application's Gemfile:
 
-    gem 'fundly-icon-font'
+    gem 'fundly-icon-font', git: 'git@github.com:fundly/fundly-icon-font.git'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
 
-    $ gem install fundly-icon-font
+## Installation as a Bower package
+
+Execute this in project root:
+
+    $ bower install fundly-icon-font --save
+
 
 ## Usage
 
-TODO: Write usage instructions here
+In a rails environment (with Sprockets)
+
+    @import 'fundly-icon-font'
+
+For a front end project (Yeoman, Grunt, Gulp etc), you can either include the compiled files from dist (minified or not) or use the SASS versions directly.
+
+    <link rel="stylesheet" href="/dist/fundly-icon-font.css">
+
+or
+
+    @import "vendor/stylesheets/fundly-icon-font"
+
+
+## Local Development
+
+    $ npm install gulp -g
+    $ npm install
+
+To add a new icon, create the SVG file (via AI or something else) set to a base size of 512px. Then upload all the files to [IcoMoon](http://icomoon.io/app) setting the font name to: fundly-icons.
+
+Download the generated fonts and copy the entire contents into `/src` overwriting the existing files. Then:
+
+    $ gulp build
 
 ## Contributing
 

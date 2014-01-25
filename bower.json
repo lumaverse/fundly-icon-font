@@ -5,19 +5,19 @@
     "jimmynicol <james@fundly.com>"
   ],
   "description": "Icon font for Fundly.com",
-  "main": "dist/stylesheets/fundly-icons.css",
+  "main": "dist/stylesheets/fundly-icons-font.css",
   "keywords": [
     "icons",
     "font",
     "Fundly"
   ],
   "license": "MIT",
-  "homepage": "http://fundly.com",
+  "homepage": "https://github.com/fundly/fundly-icon-font",
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src"
   ]
 }
