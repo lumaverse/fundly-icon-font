@@ -1,6 +1,6 @@
 {
   "name": "fundly-icon-font",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Font icons for Fundly.com",
   "main": "index.js",
   "scripts": {
