@@ -7,19 +7,22 @@ var gulp = require('gulp'),
     clean = require('gulp-clean'),
     ejs = require('gulp-ejs');
 
-gulp.task('styles', function(){
+gulp.task('styles', ['generateIconFiles'], function(){
   return gulp.src('vendor/assets/stylesheets/fundly-icon-font-dist.sass')
     .pipe(sass({ style: 'expanded' }))
     .pipe(rename('fundly-icon-font.css'))
+    .pipe(gulp.dest('dist/'))
+    .pipe(minifyCSS())
+    .pipe(rename('fundly-icon-font.min.css'))
     .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('minify', function(){
-  return gulp.src('vendor/assets/stylesheets/fundly-icon-font-dist.sass')
-    .pipe(sass({ style: 'expanded' }))
-    .pipe(minifyCSS())
-    .pipe(rename('fundly-icon-font.min.css'))
-    .pipe(gulp.dest('dist/'));
+  // return gulp.src('vendor/assets/stylesheets/fundly-icon-font-dist.sass')
+  //   .pipe(sass({ style: 'expanded' }))
+  //   .pipe(minifyCSS())
+  //   .pipe(rename('fundly-icon-font.min.css'))
+  //   .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('moveFonts', function(){
@@ -89,7 +92,7 @@ gulp.task('generateIconFiles', function(){
 
 gulp.task('build', function(){
   gulp.run(
-    'clean', 'generateIconFiles', 'styles', 'minify',
+    'clean', 'styles', 'minify',
     'moveFonts', 'moveAssets', 'replace', 'open'
   );
 });

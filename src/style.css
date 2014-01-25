@@ -32,39 +32,42 @@
 .icon-run-walk-ride:before {
 	content: "\e602";
 }
-.icon-politics:before {
+.icon-political:before {
 	content: "\e603";
 }
-.icon-non-profit:before {
+.icon-other:before {
 	content: "\e604";
 }
-.icon-memorial:before {
+.icon-non-profit:before {
 	content: "\e605";
 }
-.icon-location:before {
+.icon-memorial:before {
 	content: "\e606";
 }
-.icon-health:before {
+.icon-location:before {
 	content: "\e607";
 }
-.icon-greek:before {
+.icon-health:before {
 	content: "\e608";
 }
-.icon-family:before {
+.icon-greek:before {
 	content: "\e609";
 }
-.icon-education:before {
+.icon-family:before {
 	content: "\e60a";
 }
-.icon-community:before {
+.icon-education:before {
 	content: "\e60b";
 }
-.icon-church:before {
+.icon-community:before {
 	content: "\e60c";
 }
-.icon-arts:before {
+.icon-church:before {
 	content: "\e60d";
 }
-.icon-animal:before {
+.icon-arts:before {
 	content: "\e60e";
+}
+.icon-animal:before {
+	content: "\e60f";
 }

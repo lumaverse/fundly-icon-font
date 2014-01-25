@@ -13,7 +13,7 @@
 			},
 			"properties": {
 				"order": 1,
-				"id": 14,
+				"id": 15,
 				"prevSize": 32,
 				"code": 58880,
 				"name": "trips",
@@ -33,7 +33,7 @@
 			},
 			"properties": {
 				"order": 2,
-				"id": 13,
+				"id": 14,
 				"prevSize": 32,
 				"code": 58881,
 				"name": "sports",
@@ -56,7 +56,7 @@
 			},
 			"properties": {
 				"order": 3,
-				"id": 12,
+				"id": 13,
 				"prevSize": 32,
 				"code": 58882,
 				"name": "run-walk-ride",
@@ -76,15 +76,35 @@
 				],
 				"grid": 0,
 				"tags": [
-					"politics"
+					"political"
 				]
 			},
 			"properties": {
 				"order": 4,
-				"id": 11,
+				"id": 12,
 				"prevSize": 32,
 				"code": 58883,
-				"name": "politics",
+				"name": "political",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M754.034 510.326c0 133.996-108.622 242.618-242.614 242.618-133.986 0-242.608-108.622-242.608-242.618 0-133.982 108.622-242.604 242.608-242.604 133.992 0 242.614 108.622 242.614 242.604z",
+					"M1016.206 514.778c-196.4-73.76-73.766-256.834-73.766-256.834-198.18 17.772-182.178-183.96-182.178-183.96-181.294 95.088-252.388-71.984-252.388-71.984-97.754 168.854-257.724 66.652-257.724 66.652 12.44 207.954-186.626 184.85-186.626 184.85 138.636 191.958-56.878 263.942-56.878 263.942 195.508 95.978 60.434 247.946 60.434 247.946 207.064-20.438 185.736 181.294 185.736 181.294 216.842-103.092 257.72 71.984 257.72 71.984 63.094-157.298 251.5-71.984 251.5-71.984-21.33-203.518 181.292-179.52 181.292-179.52-127.084-183.078 72.878-252.386 72.878-252.386zM511.426 828.928c-175.952 0-318.592-142.64-318.592-318.602 0-175.946 142.64-318.586 318.592-318.586 175.956 0 318.596 142.64 318.596 318.586 0 175.962-142.642 318.602-318.596 318.602z"
+				],
+				"grid": 0,
+				"tags": [
+					"other"
+				]
+			},
+			"properties": {
+				"order": 5,
+				"id": 11,
+				"prevSize": 32,
+				"code": 58884,
+				"name": "other",
 				"ligatures": ""
 			}
 		},
@@ -101,10 +121,10 @@
 				]
 			},
 			"properties": {
-				"order": 5,
+				"order": 6,
 				"id": 10,
 				"prevSize": 32,
-				"code": 58884,
+				"code": 58885,
 				"name": "non-profit",
 				"ligatures": ""
 			}
@@ -120,10 +140,10 @@
 				]
 			},
 			"properties": {
-				"order": 6,
+				"order": 7,
 				"id": 9,
 				"prevSize": 32,
-				"code": 58885,
+				"code": 58886,
 				"name": "memorial",
 				"ligatures": ""
 			}
@@ -139,10 +159,10 @@
 				]
 			},
 			"properties": {
-				"order": 7,
+				"order": 8,
 				"id": 8,
 				"prevSize": 32,
-				"code": 58886,
+				"code": 58887,
 				"name": "location",
 				"ligatures": ""
 			}
@@ -158,10 +178,10 @@
 				]
 			},
 			"properties": {
-				"order": 8,
+				"order": 9,
 				"id": 7,
 				"prevSize": 32,
-				"code": 58887,
+				"code": 58888,
 				"name": "health",
 				"ligatures": ""
 			}
@@ -177,10 +197,10 @@
 				]
 			},
 			"properties": {
-				"order": 9,
+				"order": 10,
 				"id": 6,
 				"prevSize": 32,
-				"code": 58888,
+				"code": 58889,
 				"name": "greek",
 				"ligatures": ""
 			}
@@ -197,10 +217,10 @@
 				]
 			},
 			"properties": {
-				"order": 10,
+				"order": 11,
 				"id": 5,
 				"prevSize": 32,
-				"code": 58889,
+				"code": 58890,
 				"name": "family",
 				"ligatures": ""
 			}
@@ -216,10 +236,10 @@
 				]
 			},
 			"properties": {
-				"order": 11,
+				"order": 12,
 				"id": 4,
 				"prevSize": 32,
-				"code": 58890,
+				"code": 58891,
 				"name": "education",
 				"ligatures": ""
 			}
@@ -235,10 +255,10 @@
 				]
 			},
 			"properties": {
-				"order": 12,
+				"order": 13,
 				"id": 3,
 				"prevSize": 32,
-				"code": 58891,
+				"code": 58892,
 				"name": "community",
 				"ligatures": ""
 			}
@@ -254,10 +274,10 @@
 				]
 			},
 			"properties": {
-				"order": 13,
+				"order": 14,
 				"id": 2,
 				"prevSize": 32,
-				"code": 58892,
+				"code": 58893,
 				"name": "church",
 				"ligatures": ""
 			}
@@ -273,10 +293,10 @@
 				]
 			},
 			"properties": {
-				"order": 14,
+				"order": 15,
 				"id": 1,
 				"prevSize": 32,
-				"code": 58893,
+				"code": 58894,
 				"name": "arts",
 				"ligatures": ""
 			}
@@ -292,10 +312,10 @@
 				]
 			},
 			"properties": {
-				"order": 15,
+				"order": 16,
 				"id": 0,
 				"prevSize": 32,
-				"code": 58894,
+				"code": 58895,
 				"name": "animal",
 				"ligatures": ""
 			}
