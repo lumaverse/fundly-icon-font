@@ -30,52 +30,56 @@
   content: "\e602";
 }
 
-.f-icon-politics:before {
+.f-icon-political:before {
   content: "\e603";
 }
 
-.f-icon-non-profit:before {
+.f-icon-other:before {
   content: "\e604";
 }
 
-.f-icon-memorial:before {
+.f-icon-non-profit:before {
   content: "\e605";
 }
 
-.f-icon-location:before {
+.f-icon-memorial:before {
   content: "\e606";
 }
 
-.f-icon-health:before {
+.f-icon-location:before {
   content: "\e607";
 }
 
-.f-icon-greek:before {
+.f-icon-health:before {
   content: "\e608";
 }
 
-.f-icon-family:before {
+.f-icon-greek:before {
   content: "\e609";
 }
 
-.f-icon-education:before {
+.f-icon-family:before {
   content: "\e60a";
 }
 
-.f-icon-community:before {
+.f-icon-education:before {
   content: "\e60b";
 }
 
-.f-icon-church:before {
+.f-icon-community:before {
   content: "\e60c";
 }
 
-.f-icon-arts:before {
+.f-icon-church:before {
   content: "\e60d";
 }
 
-.f-icon-animal:before {
+.f-icon-arts:before {
   content: "\e60e";
+}
+
+.f-icon-animal:before {
+  content: "\e60f";
 }
 
 .f-icon-lg {
