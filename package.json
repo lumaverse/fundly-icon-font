@@ -23,5 +23,8 @@
     "gulp-clean": "~0.2.4",
     "gulp-iconfont": "0.0.3",
     "gulp-ejs": "~0.1.2"
+  },
+  "dependencies": {
+    "gulp-bump": "~0.1.3"
   }
 }
