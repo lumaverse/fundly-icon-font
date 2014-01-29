@@ -1,6 +1,8 @@
 {
   "name": "fundly-icon-font",
   "version": "0.1.3",
+  "homepage": "http://github.com/fundly/fundly-icon-font",
+  "repository": "git@github.com:fundly/fundly-icon-font.git",
   "description": "Font icons for Fundly.com",
   "main": "index.js",
   "scripts": {
