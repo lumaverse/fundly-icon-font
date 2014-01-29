@@ -87,20 +87,29 @@ gulp.task('build', function(){
 });
 
 // Bump Version Numbers
-function bumpVersion (type) {
+function bumpJsonVersions(type) {
   type = type || 'patch';
 
   gulp.src(['./bower.json', './package.json'])
-    .pipe(bump({type: type}))
-    .pipe(gulp.dest('./'));
-
-  var pkg = require('./package.json');
-
-  gulp.src('lib/fundly/icon/font/version.rb')
-    .pipe(p.replace(/VERSION.*\n/g, 'VERSION = "' + pkg.version + '"\n'))
-    .pipe(gulp.dest('lib/fundly/icon/font/'));
+    .pipe(p.bump({type: type}))
+    .pipe(gulp.dest('./'))
+    .pipe(bumpRubyVersion());
 }
 
-gulp.task('bump:major', function(){ bumpVersion('major'); });
-gulp.task('bump:minor', function(){ bumpVersion('minor'); });
-gulp.task('bump:patch', function(){ bumpVersion('patch'); });
+function bumpRubyVersion(){
+  var map = require('map-stream');
+
+  return map( function(file, cb) {
+    var json = JSON.parse(file.contents.toString());
+
+    gulp.src('lib/fundly/icon/font/version.rb')
+      .pipe(p.replace(/VERSION.*\n/g, 'VERSION = "' + json.version + '"\n'))
+      .pipe(gulp.dest('lib/fundly/icon/font/'));
+
+    cb(null, file)
+  });
+}
+
+gulp.task('bump:major', function(){ bumpJsonVersions('major'); });
+gulp.task('bump:minor', function(){ bumpJsonVersions('minor'); });
+gulp.task('bump:patch', function(){ bumpJsonVersions('patch'); });
