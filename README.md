@@ -48,6 +48,13 @@ Download the generated fonts and copy the entire contents into `/src` overwritin
 
     $ gulp build
 
+To bump the version number and release:
+
+    $ gulp bump:patch // (or major, minor)
+    $ git tag v0.1.2
+    $ git push origin v0.1.2
+
+
 ## Contributing
 
 1. Fork it
