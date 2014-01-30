@@ -27,7 +27,7 @@ gulp.task('generateIconFiles', function(){
       contents: contents,
       version: pkg.version
     }))
-    .pipe(p.rename('_variables.sass'))
+    .pipe(p.rename('_variables.scss'))
     .pipe(gulp.dest('vendor/assets/stylesheets/fundly-icon-font/'));
 
   return gulp.src('vendor/assets/templates/icons.ejs')
@@ -35,14 +35,17 @@ gulp.task('generateIconFiles', function(){
       icons: icons,
       contents: contents
     }))
-    .pipe(p.rename('_icons.sass'))
+    .pipe(p.rename('_icons.scss'))
     .pipe(gulp.dest('vendor/assets/stylesheets/fundly-icon-font/'));
 });
 
 // Build the CSS files from SASS, waiting first for the icons to be generated
-gulp.task('styles', ['generateIconFiles'], function(){
-  return gulp.src('vendor/assets/stylesheets/fundly-icon-font-dist.sass')
-    .pipe(p.rubySass({ style: 'expanded' }))
+gulp.task('styles', ['generateIconFiles', 'clean'], function(){
+  return gulp.src('vendor/assets/stylesheets/fundly-icon-font-dist.scss')
+    // .pipe(p.rubySass({ style: 'expanded' }))
+    .pipe(p.sass({
+      outputStyle: 'expanded'
+    }))
     .pipe(p.rename('fundly-icon-font.css'))
     .pipe(gulp.dest('dist/'))
     .pipe(p.minifyCss())
@@ -50,19 +53,19 @@ gulp.task('styles', ['generateIconFiles'], function(){
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('moveFonts', function(){
+gulp.task('moveFonts', ['clean'], function(){
   gulp.src(['src/fonts/*'])
     .pipe(gulp.dest('vendor/assets/fonts'));
   return gulp.src(['src/fonts/*'])
     .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('moveAssets', function(){
+gulp.task('moveAssets', ['clean'], function(){
   return gulp.src(['src/demo-files/*'])
     .pipe(gulp.dest('dist/demo-files'));
 });
 
-gulp.task('replace', function(){
+gulp.task('replace', ['clean'], function(){
   return gulp.src('src/demo.html')
     .pipe(p.replace(/icon-/g, 'f-icon-'))
     .pipe(p.replace(/href="style.css"/, 'href="fundly-icon-font.css"'))
@@ -75,16 +78,13 @@ gulp.task('clean', function(){
     .pipe(p.clean());
 });
 
-gulp.task('open', function(){
+gulp.task('open', ['styles', 'moveAssets', 'moveFonts', 'replace'], function(){
   gulp.src('dist/index.html')
     .pipe(p.open("<%file.path%>"), {app: 'google-chrome'});
 });
 
-gulp.task('build', function(){
-  gulp.run(
-    'clean', 'styles', 'moveFonts', 'moveAssets', 'replace', 'open'
-  );
-});
+gulp.task('build', ['open']);
+
 
 // Bump Version Numbers
 function bumpJsonVersions(type) {
