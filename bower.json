@@ -18,6 +18,13 @@
     "bower_components",
     "test",
     "tests",
-    "src"
+    "src",
+    "lib",
+    "Rakefile",
+    "*.md",
+    "Gemfile",
+    "*.gemspec",
+    "bower.json",
+    ".gitignore"
   ]
 }
