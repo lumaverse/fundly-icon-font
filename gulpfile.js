@@ -102,6 +102,8 @@ function bumpRubyVersion(){
   return map( function(file, cb) {
     var json = JSON.parse(file.contents.toString());
 
+    console.log('Version bumped to:', json.version);
+
     gulp.src('lib/fundly/icon/font/version.rb')
       .pipe(p.replace(/VERSION.*\n/g, 'VERSION = "' + json.version + '"\n'))
       .pipe(gulp.dest('lib/fundly/icon/font/'));
