@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'FundlyIcons';
-  src: url('fonts/fundly-icons.eot?v=0.2.0');
-  src: url('fonts/fundly-icons.eot?v=0.2.0#iefix') format('embedded-opentype'), url('fonts/fundly-icons.woff?v=0.2.0') format('woff'), url('fonts/fundly-icons.ttf?v=0.2.0') format('truetype'), url('fonts/fundly-icons.svg?v=0.2.0#fundlyicons') format('svg');
+  src: url('fonts/fundly-icons.eot?v=0.3.0');
+  src: url('fonts/fundly-icons.eot?v=0.3.0#iefix') format('embedded-opentype'), url('fonts/fundly-icons.woff?v=0.3.0') format('woff'), url('fonts/fundly-icons.ttf?v=0.3.0') format('truetype'), url('fonts/fundly-icons.svg?v=0.3.0#fundlyicons') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -69,6 +69,9 @@
 
 .f-icon-animal:before {
   content: "\e611"; }
+
+.f-icon-whats-app:before {
+  content: "\e612"; }
 
 .f-icon-lg {
   font-size: 1.33333em;
