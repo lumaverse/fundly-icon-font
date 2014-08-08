@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'FundlyIcons';
-  src: url('fonts/fundly-icons.eot?v=0.3.1');
-  src: url('fonts/fundly-icons.eot?v=0.3.1#iefix') format('embedded-opentype'), url('fonts/fundly-icons.woff?v=0.3.1') format('woff'), url('fonts/fundly-icons.ttf?v=0.3.1') format('truetype'), url('fonts/fundly-icons.svg?v=0.3.1#fundlyicons') format('svg');
+  src: url('fonts/fundly-icons.eot?v=0.3.2');
+  src: url('fonts/fundly-icons.eot?v=0.3.2#iefix') format('embedded-opentype'), url('fonts/fundly-icons.woff?v=0.3.2') format('woff'), url('fonts/fundly-icons.ttf?v=0.3.2') format('truetype'), url('fonts/fundly-icons.svg?v=0.3.2#fundlyicons') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -16,62 +16,65 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.f-icon-trips:before {
+.f-icon-animal:before {
   content: "\e600"; }
 
-.f-icon-sports:before {
+.f-icon-arts:before {
   content: "\e601"; }
 
-.f-icon-run-walk-ride:before {
+.f-icon-children:before {
   content: "\e602"; }
 
-.f-icon-political:before {
+.f-icon-church:before {
   content: "\e603"; }
 
-.f-icon-other:before {
+.f-icon-community:before {
   content: "\e604"; }
 
-.f-icon-non-profit:before {
+.f-icon-education:before {
   content: "\e605"; }
 
-.f-icon-memorial:before {
+.f-icon-greek:before {
   content: "\e606"; }
 
-.f-icon-logo-knockout:before {
+.f-icon-health:before {
   content: "\e607"; }
 
-.f-icon-logo-heart:before {
+.f-icon-location:before {
   content: "\e608"; }
 
-.f-icon-location:before {
+.f-icon-logo-heart:before {
   content: "\e609"; }
 
-.f-icon-health:before {
+.f-icon-logo-knockout:before {
   content: "\e60a"; }
 
-.f-icon-greek:before {
+.f-icon-memorial:before {
   content: "\e60b"; }
 
-.f-icon-education:before {
+.f-icon-military:before {
   content: "\e60c"; }
 
-.f-icon-community:before {
+.f-icon-non-profit:before {
   content: "\e60d"; }
 
-.f-icon-church:before {
+.f-icon-other:before {
   content: "\e60e"; }
 
-.f-icon-children:before {
+.f-icon-political:before {
   content: "\e60f"; }
 
-.f-icon-arts:before {
+.f-icon-run-walk-ride:before {
   content: "\e610"; }
 
-.f-icon-animal:before {
+.f-icon-sports:before {
   content: "\e611"; }
 
-.f-icon-whats-app:before {
+.f-icon-trips:before {
   content: "\e612"; }
+
+.f-icon-whats-app:before {
+  content: "\e613"; }
 
 .f-icon-lg {
   font-size: 1.33333em;
