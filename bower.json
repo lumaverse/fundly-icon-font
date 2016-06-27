@@ -26,5 +26,8 @@
     "*.gemspec",
     "bower.json",
     ".gitignore"
-  ]
+  ],
+  "dependencies": {
+    "fundly-icon-font": "^0.4.0"
+  }
 }
